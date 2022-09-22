@@ -7,11 +7,15 @@ import utilities.CommonOps;
 
 public class MobileFlows extends CommonOps {
 
-    @Step("Business Flow: Fill Form and Calculate Mortgage")
-    public static void calculateMortgage(String amount, String term, String rate){
-        MobileActions.updateText(mortgageMain.txt_amount, amount);
-        MobileActions.updateText(mortgageMain.txt_term, term);
-        MobileActions.updateText(mortgageMain.txt_rate, rate);
-        MobileActions.tap(mortgageMain.btn_calculate);
+    @Step("Business Flow: Using Loan Calculator ")
+    public static void LoanClac(String Amount,String Rate,String Years,String Months,String ExtraMonthlyPayment ){
+        MobileActions.tap(FinancialCalculatorsMainPage.LoanCalculator_btn);
+        MobileActions.updateText(FinancialCalculatorsLoanClac.loanAmount_txt,Amount);
+        MobileActions.updateText(FinancialCalculatorsLoanClac.interestRate_txt,Rate);
+        MobileActions.updateText(FinancialCalculatorsLoanClac.loanYear_txt,Years);
+        MobileActions.updateText(FinancialCalculatorsLoanClac.loanMonth_txt,Months);
+        MobileActions.updateText(FinancialCalculatorsLoanClac.extraPerMonth_txt,ExtraMonthlyPayment);
+        MobileActions.tap(FinancialCalculatorsLoanClac.Calculate_btn);
+
     }
 }

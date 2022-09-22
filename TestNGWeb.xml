@@ -4,7 +4,7 @@
     <test name="Web Tests">
         <parameter name="PlatformName" value="web" />
         <classes>
-            <class name="sanity.SauceDemoWeb" />
+            <class name="sanity.nopCommerceWeb" />
         </classes>
     </test>
 </suite>

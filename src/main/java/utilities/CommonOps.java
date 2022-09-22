@@ -75,7 +75,7 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getData("Timeout")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
         driver.get(getData("url"));
-        ManagePages.initSauceDemo();
+        ManagePages.initnopCommerce();
         action = new Actions(driver);
     }
 
@@ -141,7 +141,7 @@ public class CommonOps extends Base {
          } catch (Exception e) {
              System.out.println("Can not connect to appium server, see details: " + e);
          }
-         ManagePages.initMortgageCalc();
+         ManagePages.initFinancialCalculators();
          mobileDriver.manage().timeouts().implicitlyWait(Long.parseLong(getData("Timeout")), TimeUnit.SECONDS);
          wait = new WebDriverWait(mobileDriver, Long.parseLong(getData("Timeout")));
      }

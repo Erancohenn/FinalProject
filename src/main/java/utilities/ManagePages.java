@@ -1,23 +1,30 @@
 package utilities;
 
 import org.openqa.selenium.support.PageFactory;
+import pageObjects.FinancialCalculators.LoanCalcPage;
+import pageObjects.FinancialCalculators.MainMenuPage;
+import pageObjects.nopCommerce.ComputersMenuPage;
+import pageObjects.nopCommerce.LogInPage;
+import pageObjects.nopCommerce.NotebooksPage;
+import pageObjects.nopCommerce.RegisterPage;
 
 
 public class ManagePages extends Base{
     /*
     #####################################################################################
-     Method Name: initSauceDemo
+     Method Name: initnopCommerce
      Method Description: This Method initializing the page objects of web
      Method Parameters: --
      Method Return: --
      #####################################################################################
      */
-    public static void initSauceDemo(){
-        sauceDemoLogin = PageFactory.initElements(driver, pageObjects.sauceDemo.LoginPage.class);
-        sauceDemoMain = PageFactory.initElements(driver, pageObjects.sauceDemo.MainPage.class);
-        sauceDemoCart = PageFactory.initElements(driver, pageObjects.sauceDemo.CartPage.class);
-        sauceDemoHeader = PageFactory.initElements(driver, pageObjects.sauceDemo.HeaderPage.class);
-        sauceDemoSocial = PageFactory.initElements(driver, pageObjects.sauceDemo.SocialPage.class);
+    public static void initnopCommerce(){
+        nopCommerceMain = PageFactory.initElements(driver,pageObjects.nopCommerce.MainPage.class);
+        nopCommerceCenterMenu =PageFactory.initElements(driver,pageObjects.nopCommerce.CenterMenuPage.class);
+        nopCommerceComputersPage=PageFactory.initElements(driver, ComputersMenuPage.class);
+        nopCommerceNotebooksPage =PageFactory.initElements(driver, NotebooksPage.class);
+        nopCommerceRegisterPage=PageFactory.initElements(driver, RegisterPage.class);
+        nopCommerceLogInPage=PageFactory.initElements(driver, LogInPage.class);
     }
 
 
@@ -29,8 +36,9 @@ public class ManagePages extends Base{
      Method Return: --
      #####################################################################################
      */
-    public static void initMortgageCalc(){
-        mortgageMain = new pageObjects.mortgageCalc.MainPage(mobileDriver);
+    public static void initFinancialCalculators(){
+        FinancialCalculatorsMainPage = new MainMenuPage(mobileDriver);
+        FinancialCalculatorsLoanClac= new LoanCalcPage(mobileDriver);
     }
 
 

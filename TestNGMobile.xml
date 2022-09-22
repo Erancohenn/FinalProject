@@ -4,7 +4,7 @@
     <test name="Mobile Tests">
         <parameter name="PlatformName" value="mobile" />
         <classes>
-            <class name="sanity.MortgageCalcMobile" />
+            <class name="sanity.FinancialCalculatorsMobile" />
         </classes>
     </test>
 </suite>

@@ -4,7 +4,7 @@
     <test name="API Tests">
         <parameter name="PlatformName" value="api" />
         <classes>
-            <class name="sanity.StudentsAPI" />
+            <class name="sanity.DummyAPI" />
         </classes>
     </test>
 </suite>

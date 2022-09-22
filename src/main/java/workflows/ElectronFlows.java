@@ -21,7 +21,7 @@ public class ElectronFlows extends CommonOps {
     @Step("Empty Lists From Tasks")
     public static void emptyList(){
         for (int i = 0; i < getNumberOfTasks(); i++){
-            UIActions.mouseHover(todoMain.btn_x);
+            UIActions.mouseHoverElement(todoMain.btn_x);
         }
     }
 }

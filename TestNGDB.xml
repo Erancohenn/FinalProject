@@ -4,7 +4,7 @@
     <test name="Data Base Tests">
         <parameter name="PlatformName" value="db" />
         <classes>
-            <class name="sanity.SauceDemoDB" />
+            <class name="sanity.nopCommerceWebDB" />
         </classes>
     </test>
 </suite>

@@ -17,6 +17,9 @@ public class DBActions extends CommonOps {
             rs.next();
             credentials.add(rs.getString(1));
             credentials.add(rs.getString(2));
+            credentials.add(rs.getString(3));
+            credentials.add(rs.getString(4));
+
         } catch (Exception e) {
             System.out.println("Error Occurred while Printing Table Data, See Details: " + e);
         }

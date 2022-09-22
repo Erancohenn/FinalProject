@@ -20,9 +20,9 @@ public class TodoListElectron extends CommonOps {
     @Test(description = "Test02 - Add And Verify New Task")
     @Description("This test adds a new task and verifies it in the list of tasks")
     public void test02_addAndVerifyNewTasks() {
-        ElectronFlows.addNewTask("Learn Java");
-        ElectronFlows.addNewTask("Learn C#");
-        ElectronFlows.addNewTask("Learn Python");
+        ElectronFlows.addNewTask("Feed the dog");
+        ElectronFlows.addNewTask("Practice for the test");
+        ElectronFlows.addNewTask("Listen to music");
         Verifications.verifyNumber(ElectronFlows.getNumberOfTasks(), 3);
     }
 }

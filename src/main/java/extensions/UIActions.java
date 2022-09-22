@@ -41,8 +41,13 @@ public class UIActions extends CommonOps {
         }
     }
 
+    @Step("Mouse Hover Elements")
+    public static void mouseHoverElements(WebElement elem,WebElement elem2){
+        action.moveToElement(elem).moveToElement(elem2).click().build().perform();
+    }
+
     @Step("Mouse Hover Element")
-    public static void mouseHover(WebElement elem){
+    public static void mouseHoverElement(WebElement elem){
         action.moveToElement(elem).click().build().perform();
     }
 

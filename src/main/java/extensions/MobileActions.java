@@ -11,6 +11,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import utilities.CommonOps;
 
 import java.time.Duration;
@@ -32,6 +33,13 @@ public class MobileActions extends CommonOps {
         action.tap(new TapOptions()
                 .withElement(ElementOption.element(elem)))
                 .perform();
+    }
+
+    @Step("Update DropDown Element")
+    public static void updateDropDown(MobileElement elem,String text){
+        wait.until(ExpectedConditions.elementToBeClickable(elem));
+        Select dropdown = new Select(elem);
+        dropdown.selectByVisibleText(text);
     }
 
     @Step("Swipe")

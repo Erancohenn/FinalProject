@@ -5,22 +5,22 @@
 
     <!-- Web-->
     <BrowserName>chrome</BrowserName>
-    <url>https://www.saucedemo.com/</url>
+    <url>https://demo.nopcommerce.com/</url>
     <ImageRepo>C:\\Automation\\FinalProject\\ImageRepository\\</ImageRepo>
-    <loginUser>standard_user</loginUser>
-    <loginPassword>secret_sauce</loginPassword>
+    <!-- loginUser>standard_user</loginUser-->
+    <!-- loginPassword>secret_sauce</loginPassword-->
 
     <!-- Data Driven Testing -->
-    <DDTFile>./DDTFiles/Users.csv</DDTFile>
+    <DDTFile>./DDTFiles/items.csv</DDTFile>
 
     <!-- Mobile -->
-    <UDID>5200342feaf62525</UDID>
-    <AppPackage>com.shivgadhia.android.ukMortgageCalc</AppPackage>
-    <AppActivity>.MainActivity</AppActivity>
+    <UDID>R58M47XAHVX</UDID>
+    <AppPackage>com.financial.calculator</AppPackage>
+    <AppActivity>.FinancialCalculators</AppActivity>
     <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
 
     <!-- API -->
-    <urlAPI>http://localhost:9000/</urlAPI>
+    <urlAPI>https://dummy.restapiexample.com/api/v1/</urlAPI>
 
     <!-- Electron -->
     <ElectronDriverPath>./Drivers/electronDriver.exe</ElectronDriverPath>
@@ -31,7 +31,7 @@
     <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
 
     <!-- Data Base -->
-    <DBURL>jdbc:mysql://remotemysql.com:3306/2142VRmwWD</DBURL>
-    <DBUserName>2142VRmwWD</DBUserName>
-    <DBPassword>Cg6LDvHxLp</DBPassword>
+    <DBURL>jdbc:mysql://remotemysql.com:3306/yX8sJrKPmZ</DBURL>
+    <DBUserName>yX8sJrKPmZ</DBUserName>
+    <DBPassword>yMl2jSRkzg</DBPassword>
 </Environment>

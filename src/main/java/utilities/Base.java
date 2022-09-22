@@ -9,9 +9,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
-import pageObjects.sauceDemo.*;
+import pageObjects.FinancialCalculators.LoanCalcPage;
+import pageObjects.FinancialCalculators.MainMenuPage;
+import pageObjects.nopCommerce.*;
+
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -49,20 +53,24 @@ public class Base {
 
 
     // Page Objects- Web
-    protected static LoginPage sauceDemoLogin;
-    protected static pageObjects.sauceDemo.MainPage sauceDemoMain;
-    protected static CartPage sauceDemoCart;
-    protected static HeaderPage sauceDemoHeader;
-    protected static SocialPage sauceDemoSocial ;
+    protected static pageObjects.nopCommerce.MainPage nopCommerceMain;
+    protected static CenterMenuPage nopCommerceCenterMenu;
+    protected static ComputersMenuPage nopCommerceComputersPage;
+    protected static NotebooksPage nopCommerceNotebooksPage;
+    protected static RegisterPage nopCommerceRegisterPage;
+    protected static LogInPage nopCommerceLogInPage;
 
     // Page Objects- Mobile
-    protected static pageObjects.mortgageCalc.MainPage mortgageMain;
+    protected static MainMenuPage FinancialCalculatorsMainPage;
+    protected static LoanCalcPage FinancialCalculatorsLoanClac;
 
     // Page Objects- Electron
     protected static pageObjects.todo.MainPage todoMain;
 
     // Page Objects- Desktop
     protected static pageObjects.calculator.MainPage calcMain;
+
+
 
 
 }
